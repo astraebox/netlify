@@ -6323,14 +6323,23 @@ a:hover {
   color: #E85545; }
 
 /* Custom default button */
-.btn-secondary,
-.btn-secondary:hover,
-.btn-secondary:focus {
+#productos .btn-secondary,
+#productos .btn-secondary:hover,
+#productos .btn-secondary:focus {
   color: #FFFFFF;
   text-shadow: none;
   /* Prevent inheritance from `body` */
   background-color: #E85545;
-  border: 0.05rem solid #E85545; }
+  border: 0.25rem solid #E85545; }
+
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #FF3E59;
+  text-shadow: none;
+  /* Prevent inheritance from `body` */
+  background-color: #EEDDEE;
+  border: 0.25rem solid #FF3E59; }
 
 .cover .btn-lg:focus, .cover .btn-group-lg > .btn:focus,
 .btn-secondary:active {
@@ -6503,6 +6512,9 @@ body {
 
 .descripcion-producto ul li {
   margin-bottom: 0.5em; }
+
+.btn-compra {
+  margin-top: 0.75em; }
 
 .contacto-container {
   background-color: #ffcb3a;

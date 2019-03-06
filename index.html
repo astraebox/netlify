@@ -48,7 +48,7 @@
         <!-- Sección Descripción -->
         <div id="descripcion" class="descripcion-container seccion row mx-auto">
             <div class="col-sm-6">
-                <img class="img-fluid" src="/assets/cerezas.jpg" alt="">
+                <img class="descripcion-img img-fluid" src="/assets/antifaz.png" alt="antifaz">
             </div>
             <div class="col-sm-6 descripcion-texto">
                 <h3>Descripción de las cajas</h3>
@@ -180,7 +180,7 @@
 
 
             <!-- Scripts -->
-            <script src="https://js.stripe.com/v3/"></script>
+            <!-- <script src="https://js.stripe.com/v3/"></script> -->
             <script src="/js/jquery.min.js"></script>
             <script src="/js/bootstrap.min.js"></script>
             <!-- Smooth scroll -->
@@ -223,7 +223,8 @@
         // them to Checkout.
         stripe.redirectToCheckout({
         items: [{sku: 'sku_EeGZQ5ZMFUl1wT', quantity: 1}],
-
+        locale: 'es',
+        //billing_address_collection: 'required',
         // Note that it is not guaranteed your customers will be redirected to this
         // URL *100%* of the time, it's possible that they could e.g. close the
         // tab between form submission and the redirect.
